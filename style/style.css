@@ -1,0 +1,60 @@
+/* General de la page */
+@font-face {
+  font-family: syncopate;
+  src: url(../Font/Syncopate/Syncopate-Regular.ttf);
+}
+
+* {
+  /* max-width: 1200px; */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/** Nav menu **/
+header {
+  width: 100%;
+  background-color: #d3bba7a8;
+}
+.navmenu_h1 {
+  display: flex;
+  margin: 1%;
+}
+.navmenu_logo {
+  width: 9.6rem;
+}
+
+.navmenu {
+  width: 95%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navmenu_liste {
+  text-decoration: none;
+  display: flex;
+  gap: 4.8rem;
+  margin-right: 5%;
+}
+ul {
+  list-style-type: none;
+}
+.navmenu_btn {
+  text-decoration: none;
+  font-size: 2rem;
+}
+.navmenu_btn:hover {
+  text-decoration: underline;
+  font-size: 1.7rem;
+}
+
+.btn1 {
+  text-decoration: underline;
+}
+.navmenu_burger {
+  display: none;
+}
