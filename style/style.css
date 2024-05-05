@@ -3,6 +3,10 @@
   font-family: syncopate;
   src: url(../Font/Syncopate/Syncopate-Regular.ttf);
 }
+@font-face {
+  font-family: DM_sans;
+  src: url(../Font/DM_Sans/static/DMSans-Regular.ttf);
+}
 
 * {
   /* max-width: 1200px; */
@@ -17,14 +21,14 @@ html {
 /** Nav menu **/
 header {
   width: 100%;
-  background-color: #d3bba7a8;
+  background-color: #5c7d82;
 }
 .navmenu_h1 {
   display: flex;
   margin: 1%;
 }
 .navmenu_logo {
-  width: 9.6rem;
+  width: 5rem;
 }
 
 .navmenu {
@@ -44,6 +48,7 @@ ul {
   list-style-type: none;
 }
 .navmenu_btn {
+  font-family: DM_sans;
   text-decoration: none;
   font-size: 2rem;
 }
@@ -57,4 +62,13 @@ ul {
 }
 .navmenu_burger {
   display: none;
+}
+
+/** 1er Section **/
+.section1 {
+  width: 100%;
+}
+.section1_img {
+  width: 95%;
+  padding: 2% 0 2% 5%;
 }
