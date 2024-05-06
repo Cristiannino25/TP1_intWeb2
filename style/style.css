@@ -72,3 +72,14 @@ ul {
   width: 95%;
   padding: 2% 0 2% 5%;
 }
+
+.section2 {
+  width: 100%;
+  text-align: center;
+}
+.section2_paragraphe {
+  width: 100%;
+  padding: 1% 30%;
+  font-family: syncopate;
+  font-size: 1.5rem;
+}
