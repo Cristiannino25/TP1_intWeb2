@@ -13,7 +13,9 @@ $couleurBlanc: #f1f2ef;
 $couleurGris: #ababbb;
 $fontTitre: 4rem;
 $fontSousTitre: 2rem;
-$fontParagraphe: 1rem;
+$fontParagraphe: 1.5rem;
+$hrseparation: 5px solid green;
+
 //general
 * {
   box-sizing: border-box;
@@ -22,11 +24,12 @@ $fontParagraphe: 1rem;
 html {
   font-size: 62.5%;
 }
-
+.separation {
+  border-top: $hrseparation;
+}
 /** NAV MENU**/
 header {
   width: 100%;
-  background-color: $coulerVert;
 }
 
 .navmenu {
@@ -53,17 +56,17 @@ header {
     .navmenu_btn {
       font-family: DM_sans;
       text-decoration: none;
-      font-size: 2rem;
+      font-size: $fontSousTitre;
     }
     .navmenu_btn:hover {
       text-decoration: underline;
-      font-size: 1.7rem;
     }
   }
 }
 .navmenu_burger {
   display: none;
 }
+
 /* SECTION 1 */
 .section1 {
   width: 100%;
@@ -72,7 +75,7 @@ header {
     padding: 2% 0 2% 5%;
   }
 }
-
+/* SECTION 2 */
 .section2 {
   width: 100%;
   text-align: center;
@@ -80,6 +83,42 @@ header {
     width: 100%;
     padding: 1% 30%;
     font-family: syncopate;
-    font-size: 1.5rem;
+    font-size: $fontParagraphe;
+  }
+  .section2_input {
+    height: 3rem;
+    border-radius: 10px;
+  }
+  .section2_btn {
+    height: 3rem;
+    border-radius: 10px;
+  }
+}
+/* SECTION 3 */
+.section3 {
+  width: 101.3%;
+  height: 7rem;
+  background-color: $couleurGris;
+  margin: 2% 0 2% -1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .section3_signature {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    .section3_img {
+      height: 50%;
+      margin-right: 15%;
+    }
+
+    .section3_btn {
+      height: 3rem;
+      border-radius: 10px;
+      font-size: 1.5rem;
+      padding: 0 5%;
+    }
   }
 }

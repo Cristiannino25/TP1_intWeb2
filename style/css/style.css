@@ -14,10 +14,13 @@ html {
   font-size: 62.5%;
 }
 
+.separation {
+  border-top: 5px solid green;
+}
+
 /** NAV MENU**/
 header {
   width: 100%;
-  background-color: rgba(92, 125, 130, 0.568627451);
 }
 
 .navmenu {
@@ -51,7 +54,6 @@ header {
 }
 .navmenu_liste li .navmenu_btn:hover {
   text-decoration: underline;
-  font-size: 1.7rem;
 }
 
 .navmenu_burger {
@@ -67,6 +69,7 @@ header {
   padding: 2% 0 2% 5%;
 }
 
+/* SECTION 2 */
 .section2 {
   width: 100%;
   text-align: center;
@@ -76,4 +79,38 @@ header {
   padding: 1% 30%;
   font-family: syncopate;
   font-size: 1.5rem;
+}
+.section2 .section2_input {
+  height: 3rem;
+  border-radius: 10px;
+}
+.section2 .section2_btn {
+  height: 3rem;
+  border-radius: 10px;
+}
+
+/* SECTION 3 */
+.section3 {
+  width: 101.3%;
+  height: 7rem;
+  background-color: #ababbb;
+  margin: 2% 0 2% -1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section3 .section3_signature {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.section3 .section3_signature .section3_img {
+  height: 50%;
+  margin-right: 15%;
+}
+.section3 .section3_signature .section3_btn {
+  height: 3rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 0 5%;
 }
