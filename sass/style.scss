@@ -11,7 +11,7 @@
 $coulerVert: #5c7d8291;
 $couleurBlanc: #f1f2ef;
 $couleurGris: #ababbb;
-$fontTitre: 4rem;
+$fontTitre: 6rem;
 $fontSousTitre: 2rem;
 $fontParagraphe: 1.5rem;
 $hrseparation: 5px solid green;
@@ -119,6 +119,38 @@ header {
       border-radius: 10px;
       font-size: 1.5rem;
       padding: 0 5%;
+    }
+  }
+}
+/*SECTION 4 */
+.section4 {
+  width: 100%;
+  .section4_titre {
+    font-size: $fontTitre;
+    font-family: DM_sans;
+    display: flex;
+    justify-content: center;
+  }
+  .section4_info {
+    font-size: $fontSousTitre;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .section4_jeux {
+    display: flex;
+    justify-content: space-evenly;
+
+    .section4_carte {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .section4_img {
+        width: 20%;
+        border-radius: 50px;
+      }
     }
   }
 }
