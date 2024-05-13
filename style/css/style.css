@@ -128,7 +128,7 @@ header {
   justify-content: center;
 }
 .section4 .section4_info {
-  font-size: 2rem;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -149,7 +149,7 @@ header {
   border-radius: 50px;
 }
 .section4 .section4_carte .section4_nom {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .section4 .section4_carte .section4_description {
   font-size: 1.5rem;
@@ -186,4 +186,39 @@ header {
 .section5 .section5_imgff7 {
   width: 100%;
   object-fit: cover;
+}
+
+.section6 {
+  width: 100%;
+  display: flex;
+  background-color: #ababbb;
+  padding: 5%;
+}
+.section6 .section6_graphique {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.section6 .section6_graphique .section6_img {
+  width: 50%;
+}
+.section6 .section6_containeurDescription {
+  width: 90%;
+}
+.section6 .section6_containeurDescription .section6_titre {
+  font-size: 3rem;
+}
+.section6 .section6_containeurDescription .section6_para {
+  font-size: 1.5rem;
+}
+.section6 .section6_containeurDescription .section6_statistiques {
+  width: 100%;
+  display: flex;
+  font-size: 3rem;
+  justify-content: space-around;
+}
+.section6 .section6_btn {
+  font-size: 2rem;
+  padding: 1% 2%;
+  border-radius: 2%;
 }

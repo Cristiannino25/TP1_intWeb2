@@ -12,7 +12,8 @@ $coulerVert: #5c7d8291;
 $couleurBlanc: #f1f2ef;
 $couleurGris: #ababbb;
 $fontTitre: 6rem;
-$fontSousTitre: 2rem;
+$fontNav: 2rem;
+$fontSousTitre: 3rem;
 $fontParagraphe: 1.5rem;
 $hrseparation: 5px solid green;
 
@@ -56,7 +57,7 @@ header {
     .navmenu_btn {
       font-family: DM_sans;
       text-decoration: none;
-      font-size: $fontSousTitre;
+      font-size: $fontNav;
     }
     .navmenu_btn:hover {
       text-decoration: underline;
@@ -192,5 +193,41 @@ header {
   .section5_imgff7 {
     width: 100%;
     object-fit: cover;
+  }
+}
+.section6 {
+  width: 100%;
+  display: flex;
+  background-color: $couleurGris;
+  padding: 5%;
+  .section6_graphique {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+    .section6_img {
+      width: 50%;
+    }
+  }
+  .section6_containeurDescription {
+    width: 90%;
+
+    .section6_titre {
+      font-size: $fontSousTitre;
+    }
+    .section6_para {
+      font-size: $fontParagraphe;
+    }
+    .section6_statistiques {
+      width: 100%;
+      display: flex;
+      font-size: $fontSousTitre;
+      justify-content: space-around;
+    }
+  }
+  .section6_btn {
+    font-size: $fontNav;
+    padding: 1% 2%;
+    border-radius: 2%;
   }
 }
