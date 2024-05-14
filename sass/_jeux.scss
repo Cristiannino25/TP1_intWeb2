@@ -1,0 +1,40 @@
+/*SECTION 4 DESCRIPTION DES DIFFÉRENTS JEUX  */
+@use "variables" as *;
+.section4 {
+  width: 100%;
+  margin-bottom: 5%;
+  .section4_titre {
+    font-size: $fontTitre;
+    font-family: DM_sans;
+    display: flex;
+    justify-content: center;
+  }
+  .section4_info {
+    font-size: $fontSousTitre;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .section4_jeux {
+    width: 100%;
+    display: flex;
+  }
+  .section4_carte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2%;
+
+    .section4_img {
+      width: 15%;
+      border-radius: 50px;
+    }
+    .section4_nom {
+      font-size: $fontSousTitre;
+    }
+    .section4_description {
+      font-size: $fontParagraphe;
+    }
+  }
+}
