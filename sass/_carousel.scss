@@ -1,0 +1,57 @@
+@use "variables" as *;
+/* SECTION 1  IMAGE EN 'CARROUSEL '*/
+.section1 {
+  width: 100%;
+  .section1_img {
+    width: 95%;
+    padding: 2% 0 2% 5%;
+  }
+}
+
+/* SECTION 2 INPUT BTN */
+.section2 {
+  width: 100%;
+  text-align: center;
+  .section2_paragraphe {
+    width: 100%;
+    padding: 1% 30%;
+    font-family: syncopate;
+    font-size: $fontParagraphe;
+  }
+  .section2_input {
+    height: 3rem;
+    border-radius: 10px;
+  }
+  .section2_btn {
+    height: 3rem;
+    border-radius: 10px;
+  }
+}
+/* SECTION 3 SIGNATURE  */
+.section3 {
+  width: 101.3%;
+  height: 7rem;
+  background-color: $couleurGris;
+  margin: 2% 0 2% -1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .section3_signature {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    .section3_img {
+      height: 50%;
+      margin-right: 15%;
+    }
+
+    .section3_btn {
+      height: 3rem;
+      border-radius: 10px;
+      font-size: 1.5rem;
+      padding: 0 5%;
+    }
+  }
+}

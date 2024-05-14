@@ -1,0 +1,12 @@
+@use "variables" as *;
+//general
+* {
+  box-sizing: border-box;
+}
+// pour qu'il soit adaptative
+html {
+  font-size: 62.5%;
+}
+.separation {
+  border-top: $hrseparation;
+}

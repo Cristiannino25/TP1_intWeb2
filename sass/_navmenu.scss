@@ -1,0 +1,35 @@
+@use "variables" as *;
+.navmenu {
+  width: 95%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .navmenu_h1 {
+    display: flex;
+    margin: 1%;
+    .navmenu_logo {
+      width: 5rem;
+    }
+  }
+}
+.navmenu_liste {
+  text-decoration: none;
+  display: flex;
+  gap: 4.8rem;
+  margin-right: 5%;
+  li {
+    list-style-type: none;
+    .navmenu_btn {
+      font-family: DM_sans;
+      text-decoration: none;
+      font-size: $fontNav;
+    }
+    .navmenu_btn:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.navmenu_burger {
+  display: none;
+}
