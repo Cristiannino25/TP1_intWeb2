@@ -1,9 +1,236 @@
-// variables.
-@use "variables" as *;
-@use "general" as *;
-@use "navmenu" as *;
-@use "carousel" as *;
-@use "jeux" as *;
-@use "gird" as *;
-@use "statistiques" as *;
-@use "fonts" as *;
+// variables
+$coulerVert: #5c7d8291;
+$couleurBlanc: #ffffff;
+$couleurGris: #ababbb;
+$fontTitre: 6rem;
+$fontNav: 2rem;
+$fontSousTitre: 3rem;
+$fontParagraphe: 1.5rem;
+$hrseparation: 5px solid green;
+%btnmarge {
+  border-radius: 10px;
+  border: solid 0px;
+  background-color: $coulerVert;
+  color: $couleurBlanc;
+}
+
+//general
+* {
+  box-sizing: border-box;
+}
+// pour qu'il soit adaptative
+html {
+  font-size: 62.5%;
+}
+.separation {
+  border-top: $hrseparation;
+}
+/********** MENU ****************************/
+.navmenu {
+  width: 95%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .navmenu_h1 {
+    display: flex;
+    margin: 1%;
+    .navmenu_logo {
+      width: 5rem;
+    }
+  }
+}
+.navmenu_liste {
+  text-decoration: none;
+  display: flex;
+  gap: 4.8rem;
+  margin-right: 5%;
+  li {
+    list-style-type: none;
+    .navmenu_btn {
+      font-family: DM_sans;
+      text-decoration: none;
+      font-size: $fontNav;
+    }
+    .navmenu_btn:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.navmenu_burger {
+  display: none;
+}
+/********* SECTION 1  IMAGE EN 'CARROUSEL '*********/
+.section1 {
+  width: 100%;
+  .section1_img {
+    width: 95%;
+    padding: 2% 0 2% 5%;
+  }
+}
+
+/*********************** SECTION 2 INPUT BTN */
+.section2 {
+  width: 100%;
+  text-align: center;
+  .section2_paragraphe {
+    width: 100%;
+    padding: 1% 30%;
+    font-family: syncopate;
+    font-size: $fontParagraphe;
+  }
+  .section2_input {
+    height: 3rem;
+    border-radius: 10px;
+  }
+  .section2_btn {
+    height: 3rem;
+    @extend %btnmarge;
+  }
+}
+/************************ SECTION 3 SIGNATURE  */
+.section3 {
+  width: 101.3%;
+  height: 7rem;
+  background-color: $couleurGris;
+  margin: 2% 0 2% -1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .section3_signature {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    .section3_img {
+      height: 50%;
+      margin-right: 15%;
+    }
+
+    .section3_btn {
+      height: 3rem;
+      border-radius: 10px;
+      font-size: 1.5rem;
+      padding: 0 5%;
+      @extend %btnmarge;
+    }
+  }
+}
+
+/************************LES JEUX*************************/
+.section4 {
+  width: 100%;
+  margin-bottom: 5%;
+  .section4_titre {
+    font-size: $fontTitre;
+    font-family: DM_sans;
+    display: flex;
+    justify-content: center;
+  }
+  .section4_info {
+    font-size: $fontSousTitre;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .section4_jeux {
+    width: 100%;
+    display: flex;
+  }
+  .section4_carte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2%;
+
+    .section4_img {
+      width: 15%;
+      border-radius: 50px;
+    }
+    .section4_nom {
+      font-size: $fontSousTitre;
+    }
+    .section4_description {
+      font-size: $fontParagraphe;
+      text-align: center;
+    }
+  }
+}
+
+/************************LA GRID *****************/
+.section5 {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1rem;
+  .section5_img1 {
+    grid-area: 1 / 3 / 3 / 6;
+    align-self: flex-end;
+  }
+  .section5_img2 {
+    grid-area: 2 / 1 / 4 / 3;
+  }
+  .section5_img3 {
+    grid-area: 3 / 3 / 4 / 4;
+  }
+  .section5_img4 {
+    grid-area: 3 / 4 / 5 / 7;
+  }
+  .section5_img5 {
+    grid-area: 2 / 6 / 3 / 7;
+    align-self: end;
+  }
+  .section5_img6 {
+    grid-area: 2 / 7 / 4 / 8;
+    align-self: center;
+  }
+  .section5_imgff7 {
+    width: 100%;
+    object-fit: cover;
+    border: solid black 1px;
+  }
+}
+
+/*************** STATISTIQUES*****************/
+.section6 {
+  width: 100%;
+  display: flex;
+  background-color: $couleurGris;
+  padding: 5%;
+  .section6_graphique {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+    .section6_img {
+      width: 50%;
+    }
+  }
+  .section6_containeurDescription {
+    width: 90%;
+
+    .section6_titre {
+      font-size: $fontSousTitre;
+      color: $couleurBlanc;
+    }
+    .section6_para {
+      font-size: $fontParagraphe;
+      text-align: center;
+      color: $couleurBlanc;
+    }
+    .section6_statistiques {
+      width: 100%;
+      display: flex;
+      font-size: $fontSousTitre;
+      color: $couleurBlanc;
+      justify-content: space-around;
+    }
+  }
+  .section6_btn {
+    font-size: $fontNav;
+    padding: 1% 2%;
+    @extend %btnmarge;
+  }
+}

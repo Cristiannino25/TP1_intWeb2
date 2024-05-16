@@ -1,12 +1,10 @@
-@charset "UTF-8";
-@font-face {
-  font-family: syncopate;
-  src: url(../Font/Syncopate/Syncopate-Regular.ttf);
+.section6 .section6_btn, .section3 .section3_signature .section3_btn, .section2 .section2_btn {
+  border-radius: 10px;
+  border: solid 0px;
+  background-color: rgba(92, 125, 130, 0.568627451);
+  color: #ffffff;
 }
-@font-face {
-  font-family: DM_sans;
-  src: url(../Font/DM_Sans/static/DMSans-Regular.ttf);
-}
+
 * {
   box-sizing: border-box;
 }
@@ -19,11 +17,7 @@ html {
   border-top: 5px solid green;
 }
 
-/** NAV MENU**/
-header {
-  width: 100%;
-}
-
+/********** MENU ****************************/
 .navmenu {
   width: 95%;
   margin-left: 5%;
@@ -61,7 +55,7 @@ header {
   display: none;
 }
 
-/* SECTION 1  IMAGE EN 'CARROUSEL '*/
+/********* SECTION 1  IMAGE EN 'CARROUSEL '*********/
 .section1 {
   width: 100%;
 }
@@ -70,7 +64,7 @@ header {
   padding: 2% 0 2% 5%;
 }
 
-/* SECTION 2 INPUT BTN */
+/*********************** SECTION 2 INPUT BTN */
 .section2 {
   width: 100%;
   text-align: center;
@@ -87,10 +81,9 @@ header {
 }
 .section2 .section2_btn {
   height: 3rem;
-  border-radius: 10px;
 }
 
-/* SECTION 3 SIGNATURE  */
+/************************ SECTION 3 SIGNATURE  */
 .section3 {
   width: 101.3%;
   height: 7rem;
@@ -116,7 +109,7 @@ header {
   padding: 0 5%;
 }
 
-/*SECTION 4 DESCRIPTION DES DIFFÉRENTS JEUX  */
+/************************LES JEUX*************************/
 .section4 {
   width: 100%;
   margin-bottom: 5%;
@@ -153,20 +146,19 @@ header {
 }
 .section4 .section4_carte .section4_description {
   font-size: 1.5rem;
+  text-align: center;
 }
 
-/*SECTION 5 GRID*/
+/************************LA GRID *****************/
 .section5 {
   margin: 5%;
   display: grid;
-  align-items: end;
   grid-template-columns: repeat(7, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 0px;
-  width: fit-content;
+  grid-gap: 1rem;
 }
 .section5 .section5_img1 {
   grid-area: 1/3/3/6;
+  align-self: flex-end;
 }
 .section5 .section5_img2 {
   grid-area: 2/1/4/3;
@@ -179,15 +171,19 @@ header {
 }
 .section5 .section5_img5 {
   grid-area: 2/6/3/7;
+  align-self: end;
 }
 .section5 .section5_img6 {
   grid-area: 2/7/4/8;
+  align-self: center;
 }
 .section5 .section5_imgff7 {
   width: 100%;
   object-fit: cover;
+  border: solid black 1px;
 }
 
+/*************** STATISTIQUES*****************/
 .section6 {
   width: 100%;
   display: flex;
@@ -207,18 +203,21 @@ header {
 }
 .section6 .section6_containeurDescription .section6_titre {
   font-size: 3rem;
+  color: #ffffff;
 }
 .section6 .section6_containeurDescription .section6_para {
   font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
 }
 .section6 .section6_containeurDescription .section6_statistiques {
   width: 100%;
   display: flex;
   font-size: 3rem;
+  color: #ffffff;
   justify-content: space-around;
 }
 .section6 .section6_btn {
   font-size: 2rem;
   padding: 1% 2%;
-  border-radius: 2%;
 }
