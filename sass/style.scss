@@ -6,7 +6,7 @@ $fontTitre: 6rem;
 $fontNav: 2rem;
 $fontSousTitre: 3rem;
 $fontParagraphe: 1.5rem;
-$hrseparation: 5px solid green;
+$hrseparation: 5px solid #5c7d82;
 %btnmarge {
   border-radius: 10px;
   border: solid 0px;
@@ -191,6 +191,9 @@ html {
     object-fit: cover;
     border: solid black 1px;
   }
+  .section5--filtre {
+    filter: saturate(60%);
+  }
 }
 
 /*************** STATISTIQUES*****************/
@@ -214,6 +217,7 @@ html {
     .section6_titre {
       font-size: $fontSousTitre;
       color: $couleurBlanc;
+      text-align: center;
     }
     .section6_para {
       font-size: $fontParagraphe;
