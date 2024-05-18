@@ -225,3 +225,53 @@ html {
   font-size: 2rem;
   padding: 1% 2%;
 }
+
+/******************Personnages***************/
+.section7 {
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.section7 .section7_titre_soust {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section7 .section7_titre_soust .section7_titre {
+  font-size: 3rem;
+}
+.section7 .section7_titre_soust .section7_sous_titre {
+  width: 50%;
+  height: auto;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.section7 .section7_cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.section7 .section7_cards .section7_personnage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 1%;
+}
+.section7 .section7_cards .section7_imgperso {
+  width: 50%;
+  border-radius: 10%;
+}
+.section7 .section7_cards .section7_nomPerso {
+  font-size: 3rem;
+}
+.section7 .section7_cards .section7_rolePerso {
+  font-size: 1.5rem;
+  margin-top: -5%;
+}
+.section7 .section7_cards .section7_description {
+  font-size: 1.5rem;
+  text-align: justify;
+}
