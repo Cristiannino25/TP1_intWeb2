@@ -242,7 +242,7 @@ html {
 .section7 {
   width: 100%;
   height: auto;
-  margin-top: 5%;
+  margin: 5% 0;
   display: flex;
   flex-direction: column;
 
@@ -260,6 +260,7 @@ html {
       height: auto;
       font-size: $fontParagraphe;
       text-align: center;
+      padding-left: 2%;
     }
   }
   .section7_cards {
@@ -271,21 +272,35 @@ html {
       flex-direction: column;
       justify-content: space-between;
       margin: 0 1%;
+      padding: 1%;
+      .section7_imgperso {
+        width: 50%;
+        border-radius: 10%;
+      }
+      .section7_nomPerso {
+        font-size: $fontSousTitre;
+      }
+      .section7_rolePerso {
+        font-size: $fontParagraphe;
+        margin-top: -5%;
+      }
+      .section7_description {
+        font-size: $fontParagraphe;
+        text-align: justify;
+      }
     }
-    .section7_imgperso {
-      width: 50%;
-      border-radius: 10%;
+    .section7--border {
+      border-left: 3px solid $coulerVert;
     }
-    .section7_nomPerso {
-      font-size: $fontSousTitre;
-    }
-    .section7_rolePerso {
-      font-size: $fontParagraphe;
-      margin-top: -5%;
-    }
-    .section7_description {
-      font-size: $fontParagraphe;
-      text-align: justify;
-    }
+  }
+}
+.section8 {
+  width: 100%;
+  height: auto;
+  .section8_containeur {
+    width: 100%;
+    display: flex;
+    margin-left: 5%;
+    padding-bottom: 5%;
   }
 }
