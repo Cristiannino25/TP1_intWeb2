@@ -13,6 +13,12 @@ $hrseparation: 5px solid #5c7d82;
   background-color: $coulerVert;
   color: $couleurBlanc;
 }
+%marginforumaulaire {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
 
 //general
 * {
@@ -294,13 +300,59 @@ html {
     }
   }
 }
+/************** formulaire ****************/
 .section8 {
   width: 100%;
-  height: auto;
-  .section8_containeur {
+  .section8_boxformulaire {
     width: 100%;
     display: flex;
-    margin-left: 5%;
-    padding-bottom: 5%;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .section8_formulaire {
+      width: 40%;
+      font-size: $fontParagraphe;
+      @extend %marginforumaulaire;
+      border: 1px solid $coulerVert;
+      padding: 2%;
+      background-color: $coulerVert;
+      color: $couleurBlanc;
+      border-radius: 20px;
+      z-index: 1;
+
+      .section8_titre_descript {
+        h2 {
+          font-size: $fontSousTitre;
+        }
+        h3 {
+          width: 50%;
+          font-size: $fontParagraphe;
+        }
+      }
+      input:focus {
+        background-color: #92c8c4;
+      }
+      textarea:focus {
+        background-color: #92c8c4;
+      }
+      #nom {
+        margin: 0 5% 2% 0;
+      }
+      #email {
+        margin-bottom: 2%;
+      }
+      #message {
+        margin-bottom: 2%;
+      }
+      button {
+        width: 30%;
+        padding: 2% 1%;
+        @extend %btnmarge;
+        &:hover {
+          background-color: $couleurBlanc;
+          color: $coulerVert;
+        }
+      }
+    }
   }
 }

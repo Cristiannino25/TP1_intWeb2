@@ -35,16 +35,16 @@
     </header>
     <hr class="separation" />
     <main>
-      <div class="section1">
+      <section class="section1">
         <img
           class="section1_img"
           src="medias/carousselle.png"
           alt="Deux personnages de FF7 avec deux épées"
         />
-      </div>
+      </section>
       <hr class="separation" />
 
-      <div class="section2" id="section2">
+      <section class="section2" id="section2">
         <p class="section2_paragraphe">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quae
           rem blanditiis omnis delectus id distinctio sapiente culpa laborum
@@ -61,9 +61,9 @@
             value="BUTTON"
           />
         </div>
-      </div>
+      </section>
 
-      <div class="section3" id="section3">
+      <section class="section3" id="section3">
         <div class="section3_signature">
           <img
             class="section3_img"
@@ -78,8 +78,8 @@
             value="Button"
           />
         </div>
-      </div>
-      <div class="section4" id="section4">
+      </section>
+      <section class="section4" id="section4">
         <h2 class="section4_titre">Final Fantasy VII</h2>
         <h3 class="section4_info">
           Lorem ipsum dolor sit amet consectetur, adipisicing <br />elit. Sit
@@ -126,7 +126,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </section>
       <hr class="separation" />
       <div class="section5" id="section5">
         <div class="section5_img1">
@@ -173,7 +173,7 @@
         </div>
       </div>
 
-      <div class="section6" id="section6">
+      <section class="section6" id="section6">
         <div class="section6_graphique">
           <img
             class="section6_img"
@@ -198,8 +198,8 @@
           </div>
           <button class="section6_btn">Voir plus</button>
         </div>
-      </div>
-      <div class="section7" id="section7">
+      </section>
+      <section class="section7" id="section7">
         <div class="section7_titre_soust">
           <h2 class="section7_titre">Les personnages</h2>
           <h3 class="section7_sous_titre">
@@ -269,26 +269,68 @@
             </p>
           </div>
         </div>
-      </div>
+      </section>
       <hr class="separation" />
-      <div class="section8">
-        <div class="section8_containeur">
-          <form id="section8_formulaire">
-            <label for="nom">Nom:</label>
-            <input type="text" id="nom" name="nom" required />
-            <label for="prenom">Prénom:</label>
-            <input type="text" id="prenom" name="prenom" required />
+      <section class="section8">
+        <div class="section8_boxmap">
+          <iframe
+            class="section8_map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53178.27035907426!2d-73.6856110164628!3d45.53345424937181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2zTW9udHLDqWFsLCBRQw!5e0!3m2!1sfr!2sca!4v1710975716907!5m2!1sfr!2sca"
+            width="1500"
+            height="600"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="section8_boxformulaire">
+          <form class="section8_formulaire">
+            <div class="section8_titre_descript">
+              <h2 class="section8_formulairetitre">Formulaire</h2>
+              <h3 class="section8_h3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </h3>
+            </div>
+            <div class="section8_nomprenom">
+              <label for="nom"></label>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Nom de famille"
+                required
+              />
+              <label for="prenom"></label>
+              <input
+                type="text"
+                id="prenom"
+                name="prenom"
+                placeholder="Prenom"
+                required
+              />
+            </div>
+            <label for="email"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+            <label for="message"></label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Envoyer</button>
+            <button class="section8--btnhover" type="submit">ENVOYER</button>
           </form>
         </div>
-      </div>
+      </section>
     </main>
   </body>
 </html>
