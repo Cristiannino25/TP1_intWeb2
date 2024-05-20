@@ -1,7 +1,7 @@
 .section8 .section8_boxformulaire .section8_formulaire button, .section6 .section6_btn, .section3 .section3_signature .section3_btn, .section2 .section2_btn {
   border-radius: 10px;
   border: solid 0px;
-  background-color: rgba(92, 125, 130, 0.568627451);
+  background-color: #825c5c;
   color: #ffffff;
 }
 
@@ -297,16 +297,20 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin: 2% 0;
+}
+.section8 .section8_boxformulaire .section8_boxmap {
+  width: 100%;
 }
 .section8 .section8_boxformulaire .section8_formulaire {
   width: 40%;
   font-size: 1.5rem;
   border: 1px solid rgba(92, 125, 130, 0.568627451);
   padding: 2%;
-  background-color: rgba(92, 125, 130, 0.568627451);
+  background-color: rgba(92, 125, 130, 0.8588235294);
   color: #ffffff;
   border-radius: 20px;
-  z-index: 1;
+  margin-top: -34%;
 }
 .section8 .section8_boxformulaire .section8_formulaire .section8_titre_descript h2 {
   font-size: 3rem;
@@ -315,19 +319,36 @@ html {
   width: 50%;
   font-size: 1.5rem;
 }
+.section8 .section8_boxformulaire .section8_formulaire .section8_nomprenom {
+  width: 100%;
+  display: flex;
+}
+.section8 .section8_boxformulaire .section8_formulaire .section8_nomprenom #nom {
+  width: 100%;
+  margin: 0 5% 2% 0;
+}
+.section8 .section8_boxformulaire .section8_formulaire .section8_nomprenom #prenom {
+  width: 100%;
+  margin: 0 5% 2% 0;
+  padding-left: 5%;
+}
+.section8 .section8_boxformulaire .section8_formulaire input {
+  padding: 1%;
+}
 .section8 .section8_boxformulaire .section8_formulaire input:focus {
   background-color: #92c8c4;
 }
+.section8 .section8_boxformulaire .section8_formulaire textarea {
+  padding-bottom: 4%;
+}
 .section8 .section8_boxformulaire .section8_formulaire textarea:focus {
   background-color: #92c8c4;
-}
-.section8 .section8_boxformulaire .section8_formulaire #nom {
-  margin: 0 5% 2% 0;
 }
 .section8 .section8_boxformulaire .section8_formulaire #email {
   margin-bottom: 2%;
 }
 .section8 .section8_boxformulaire .section8_formulaire #message {
+  height: 50%;
   margin-bottom: 2%;
 }
 .section8 .section8_boxformulaire .section8_formulaire button {

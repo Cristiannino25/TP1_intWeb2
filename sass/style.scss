@@ -10,7 +10,7 @@ $hrseparation: 5px solid #5c7d82;
 %btnmarge {
   border-radius: 10px;
   border: solid 0px;
-  background-color: $coulerVert;
+  background-color: #825c5c;
   color: $couleurBlanc;
 }
 %marginforumaulaire {
@@ -308,17 +308,21 @@ html {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin: 2% 0;
 
+    .section8_boxmap {
+      width: 100%;
+    }
     .section8_formulaire {
       width: 40%;
       font-size: $fontParagraphe;
       @extend %marginforumaulaire;
       border: 1px solid $coulerVert;
       padding: 2%;
-      background-color: $coulerVert;
+      background-color: #5c7d82db;
       color: $couleurBlanc;
       border-radius: 20px;
-      z-index: 1;
+      margin-top: -34%;
 
       .section8_titre_descript {
         h2 {
@@ -329,19 +333,38 @@ html {
           font-size: $fontParagraphe;
         }
       }
-      input:focus {
-        background-color: #92c8c4;
+      .section8_nomprenom {
+        width: 100%;
+        display: flex;
+
+        #nom {
+          width: 100%;
+          margin: 0 5% 2% 0;
+        }
+        #prenom {
+          width: 100%;
+          margin: 0 5% 2% 0;
+          padding-left: 5%;
+        }
       }
-      textarea:focus {
-        background-color: #92c8c4;
+      input {
+        padding: 1%;
+        &:focus {
+          background-color: #92c8c4;
+        }
       }
-      #nom {
-        margin: 0 5% 2% 0;
+      textarea {
+        padding-bottom: 4%;
+        &:focus {
+          background-color: #92c8c4;
+        }
       }
+
       #email {
         margin-bottom: 2%;
       }
       #message {
+        height: 50%;
         margin-bottom: 2%;
       }
       button {
