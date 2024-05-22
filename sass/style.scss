@@ -19,6 +19,11 @@ $hrseparation: 5px solid #5c7d82;
   flex-direction: column;
   margin: 1%;
 }
+%margininfo {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
 
 //general
 * {
@@ -374,6 +379,77 @@ html {
         &:hover {
           background-color: $couleurBlanc;
           color: $coulerVert;
+        }
+      }
+    }
+  }
+}
+/******* Bas de page ***********/
+.section9 {
+  width: 100%;
+  margin-top: 3%;
+  .section9_logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .section9_img {
+      padding: 1%;
+      border: 3px solid $coulerVert;
+    }
+  }
+  .section9_information {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .section9_inf {
+      margin: 2%;
+      font-size: $fontParagraphe;
+      text-decoration: underline;
+    }
+  }
+  .section9_nousjoindre {
+    width: 100%;
+    display: flex;
+
+    .section9_faitpar {
+      width: 100%;
+      font-size: $fontParagraphe;
+      font-family: "Times New Roman";
+      margin-left: 1%;
+    }
+    .section9_reseauxsociaux {
+      width: 100%;
+      padding-left: 15%;
+      .section9_icon {
+        width: 8%;
+        margin-top: 3%;
+      }
+    }
+    .section9_telemail {
+      width: 100%;
+      display: flex;
+
+      justify-content: flex-end;
+      align-items: center;
+      .section9_tele {
+        @extend %margininfo;
+        .section9_icontele {
+          width: 13%;
+          margin-right: 5%;
+        }
+        .section9_telephone {
+          font-size: $fontParagraphe;
+        }
+      }
+      .section9_email {
+        @extend %margininfo;
+        .section9_iconemail {
+          width: 13%;
+          margin-right: 5%;
+        }
+        .section9_email {
+          font-size: $fontParagraphe;
         }
       }
     }

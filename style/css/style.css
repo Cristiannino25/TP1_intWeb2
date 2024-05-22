@@ -12,6 +12,12 @@
   margin: 1%;
 }
 
+.section9 .section9_nousjoindre .section9_telemail .section9_email, .section9 .section9_nousjoindre .section9_telemail .section9_tele {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -358,4 +364,67 @@ html {
 .section8 .section8_boxformulaire .section8_formulaire button:hover {
   background-color: #ffffff;
   color: rgba(92, 125, 130, 0.568627451);
+}
+
+/******* Bas de page ***********/
+.section9 {
+  width: 100%;
+  margin-top: 3%;
+}
+.section9 .section9_logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.section9 .section9_logo .section9_img {
+  padding: 1%;
+  border: 3px solid rgba(92, 125, 130, 0.568627451);
+}
+.section9 .section9_information {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.section9 .section9_information .section9_inf {
+  margin: 2%;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+.section9 .section9_nousjoindre {
+  width: 100%;
+  display: flex;
+}
+.section9 .section9_nousjoindre .section9_faitpar {
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: "Times New Roman";
+  margin-left: 1%;
+}
+.section9 .section9_nousjoindre .section9_reseauxsociaux {
+  width: 100%;
+  padding-left: 15%;
+}
+.section9 .section9_nousjoindre .section9_reseauxsociaux .section9_icon {
+  width: 8%;
+  margin-top: 3%;
+}
+.section9 .section9_nousjoindre .section9_telemail {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.section9 .section9_nousjoindre .section9_telemail .section9_tele .section9_icontele {
+  width: 13%;
+  margin-right: 5%;
+}
+.section9 .section9_nousjoindre .section9_telemail .section9_tele .section9_telephone {
+  font-size: 1.5rem;
+}
+.section9 .section9_nousjoindre .section9_telemail .section9_email .section9_iconemail {
+  width: 13%;
+  margin-right: 5%;
+}
+.section9 .section9_nousjoindre .section9_telemail .section9_email .section9_email {
+  font-size: 1.5rem;
 }
