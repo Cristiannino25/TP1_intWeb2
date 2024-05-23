@@ -16,6 +16,12 @@
   width: 40%;
   display: flex;
   align-items: center;
+  color: black;
+}
+
+.section8 .section8_boxformulaire .section8_formulaire button:hover, .section6 .section6_btn:hover, .section3 .section3_signature .section3_btn:hover, .section2 .section2_btn:hover {
+  background-color: #ffffff;
+  color: rgba(92, 125, 130, 0.568627451);
 }
 
 * {
@@ -59,9 +65,11 @@ html {
   font-family: DM_sans;
   text-decoration: none;
   font-size: 2rem;
+  color: #825c5c;
 }
 .navmenu_liste li .navmenu_btn:hover {
   text-decoration: underline;
+  color: rgba(92, 125, 130, 0.568627451);
 }
 
 .navmenu_burger {
@@ -95,6 +103,9 @@ html {
 .section2 .section2_btn {
   height: 3rem;
 }
+.section2 .section2_btn:hover {
+  border: 1px solid #825c5c;
+}
 
 /************************ SECTION 3 SIGNATURE  */
 .section3 {
@@ -121,7 +132,6 @@ html {
   font-size: 1.5rem;
   padding: 0 5%;
 }
-
 /************************LES JEUX*************************/
 .section4 {
   width: 100%;
@@ -238,7 +248,6 @@ html {
   font-size: 2rem;
   padding: 1% 2%;
 }
-
 /******************Personnages***************/
 .section7 {
   width: 100%;
@@ -361,11 +370,6 @@ html {
   width: 30%;
   padding: 2% 1%;
 }
-.section8 .section8_boxformulaire .section8_formulaire button:hover {
-  background-color: #ffffff;
-  color: rgba(92, 125, 130, 0.568627451);
-}
-
 /******* Bas de page ***********/
 .section9 {
   width: 100%;
@@ -420,6 +424,7 @@ html {
 }
 .section9 .section9_nousjoindre .section9_telemail .section9_tele .section9_telephone {
   font-size: 1.5rem;
+  color: black;
 }
 .section9 .section9_nousjoindre .section9_telemail .section9_email .section9_iconemail {
   width: 13%;

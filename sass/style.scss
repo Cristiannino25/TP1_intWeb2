@@ -23,6 +23,11 @@ $hrseparation: 5px solid #5c7d82;
   width: 40%;
   display: flex;
   align-items: center;
+  color: black;
+}
+%hoverbtn {
+  background-color: $couleurBlanc;
+  color: $coulerVert;
 }
 
 //general
@@ -62,9 +67,11 @@ html {
       font-family: DM_sans;
       text-decoration: none;
       font-size: $fontNav;
+      color: #825c5c;
     }
     .navmenu_btn:hover {
       text-decoration: underline;
+      color: $coulerVert;
     }
   }
 }
@@ -97,6 +104,10 @@ html {
   .section2_btn {
     height: 3rem;
     @extend %btnmarge;
+    &:hover {
+      @extend %hoverbtn;
+      border: 1px solid #825c5c;
+    }
   }
 }
 /************************ SECTION 3 SIGNATURE  */
@@ -125,6 +136,9 @@ html {
       font-size: 1.5rem;
       padding: 0 5%;
       @extend %btnmarge;
+      &:hover {
+        @extend %hoverbtn;
+      }
     }
   }
 }
@@ -247,6 +261,9 @@ html {
     font-size: $fontNav;
     padding: 1% 2%;
     @extend %btnmarge;
+    &:hover {
+      @extend %hoverbtn;
+    }
   }
 }
 /******************Personnages***************/
@@ -377,8 +394,7 @@ html {
         padding: 2% 1%;
         @extend %btnmarge;
         &:hover {
-          background-color: $couleurBlanc;
-          color: $coulerVert;
+          @extend %hoverbtn;
         }
       }
     }
@@ -440,6 +456,7 @@ html {
         }
         .section9_telephone {
           font-size: $fontParagraphe;
+          color: black;
         }
       }
       .section9_email {
