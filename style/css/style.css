@@ -36,6 +36,21 @@ html {
   border-top: 5px solid #5c7d82;
 }
 
+/****pour validation du formulaire***/
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control .errorMessage {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+
 /********** MENU ****************************/
 .navmenu {
   width: 95%;

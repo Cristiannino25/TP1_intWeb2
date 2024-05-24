@@ -285,7 +285,13 @@
           ></iframe>
         </div>
         <div class="section8_boxformulaire">
-          <form class="section8_formulaire">
+          <form
+            class="section8_formulaire"
+            id="section8_formulaire"
+            action="##"
+            onsubmit=" return validateForm() "
+            novalidate
+          >
             <div class="section8_titre_descript">
               <h2 class="section8_formulairetitre">Formulaire</h2>
               <h3 class="section8_h3">
@@ -293,40 +299,50 @@
               </h3>
             </div>
             <div class="section8_nomprenom">
-              <label for="nom"></label>
-              <input
-                type="text"
-                id="nom"
-                name="nom"
-                placeholder="Nom de famille"
-                required
-              />
-              <label for="prenom"></label>
-              <input
-                type="text"
-                id="prenom"
-                name="prenom"
-                placeholder="Prenom"
-                required
-              />
+              <div class="input-control">
+                <label for="nom"></label>
+                <input
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  placeholder="Nom de famille"
+                  required
+                />
+                <div class="errorMessage"></div>
+              </div>
+              <div class="input-control">
+                <label for="prenom"></label>
+                <input
+                  type="text"
+                  id="prenom"
+                  name="prenom"
+                  placeholder="Prenom"
+                  required
+                />
+                <div class="errorMessage"></div>
+              </div>
             </div>
-            <label for="email"></label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              required
-            />
-
-            <label for="message"></label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Message"
-              required
-            ></textarea>
-
+            <div class="input-control">
+              <label for="email"></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <div class="errorMessage"></div>
+            </div>
+            <div class="input-control">
+              <label for="message"></label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Message"
+                required
+              ></textarea>
+              <div class="errorMessage"></div>
+            </div>
             <button class="section8--btnhover" type="submit">ENVOYER</button>
           </form>
         </div>
