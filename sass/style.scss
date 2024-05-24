@@ -232,10 +232,6 @@ html {
     width: 90%;
     display: flex;
     justify-content: center;
-
-    .section6_img {
-      width: 50%;
-    }
   }
   .section6_containeurDescription {
     width: 90%;
@@ -361,7 +357,7 @@ html {
         display: flex;
         margin-bottom: 2%;
         .section8_nom {
-          width: 50%;
+          width: 100%;
 
           input {
             width: 100%;
@@ -374,7 +370,7 @@ html {
         .section8_prenom {
           width: 100%;
           input {
-            width: 50%;
+            width: 100%;
             height: 30px;
             &:focus {
               background-color: #92c8c4;
@@ -497,4 +493,19 @@ html {
       }
     }
   }
+}
+/*******************RESPONSIVE****************************/
+
+@media screen and (max-width: 960px) {
+  .section6_img {
+    width: 80%;
+  }
+
+  #section8_formulaire {
+    margin-top: -50%;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 500px) {
 }
