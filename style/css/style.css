@@ -1,4 +1,4 @@
-.section8 .section8_boxformulaire .section8_formulaire button, .section6 .section6_btn, .section3 .section3_signature .section3_btn, .section2 .section2_btn {
+.section8 .section8_boxformulaire button, .section6 .section6_btn, .section3 .section3_signature .section3_btn, .section2 .section2_btn {
   border-radius: 10px;
   border: solid 0px;
   background-color: #825c5c;
@@ -19,7 +19,7 @@
   color: black;
 }
 
-.section8 .section8_boxformulaire .section8_formulaire button:hover, .section6 .section6_btn:hover, .section3 .section3_signature .section3_btn:hover, .section2 .section2_btn:hover {
+.section8 .section8_boxformulaire button:hover, .section6 .section6_btn:hover, .section3 .section3_signature .section3_btn:hover, .section2 .section2_btn:hover {
   background-color: #ffffff;
   color: rgba(92, 125, 130, 0.568627451);
 }
@@ -34,21 +34,6 @@ html {
 
 .separation {
   border-top: 5px solid #5c7d82;
-}
-
-/****pour validation du formulaire***/
-.input-control.success input {
-  border-color: #09c372;
-}
-
-.input-control.error input {
-  border-color: #ff3860;
-}
-
-.input-control .errorMessage {
-  color: #ff3860;
-  font-size: 9px;
-  height: 13px;
 }
 
 /********** MENU ****************************/
@@ -328,12 +313,13 @@ html {
   flex-direction: column;
   align-items: flex-end;
   margin: 2% 0;
+  /****pour validation du formulaire***/
 }
 .section8 .section8_boxformulaire .section8_boxmap {
   width: 100%;
 }
 .section8 .section8_boxformulaire .section8_formulaire {
-  width: 40%;
+  width: 35%;
   font-size: 1.5rem;
   border: 1px solid rgba(92, 125, 130, 0.568627451);
   padding: 2%;
@@ -352,39 +338,61 @@ html {
 .section8 .section8_boxformulaire .section8_formulaire .section8_nomprenom {
   width: 100%;
   display: flex;
+  margin-bottom: 2%;
 }
-.section8 .section8_boxformulaire .section8_formulaire .section8_nomprenom #nom {
+.section8 .section8_boxformulaire .section8_formulaire .section8_nomprenom .section8_nom {
+  width: 50%;
+}
+.section8 .section8_boxformulaire .section8_formulaire .section8_nomprenom .section8_nom input {
   width: 100%;
-  margin: 0 5% 2% 0;
+  height: 30px;
 }
-.section8 .section8_boxformulaire .section8_formulaire .section8_nomprenom #prenom {
+.section8 .section8_boxformulaire .section8_formulaire .section8_nomprenom .section8_nom input:focus {
+  background-color: #92c8c4;
+}
+.section8 .section8_boxformulaire .section8_formulaire .section8_nomprenom .section8_prenom {
   width: 100%;
-  margin: 0 5% 2% 0;
-  padding-left: 5%;
 }
-.section8 .section8_boxformulaire .section8_formulaire input {
-  padding: 1%;
+.section8 .section8_boxformulaire .section8_formulaire .section8_nomprenom .section8_prenom input {
+  width: 50%;
+  height: 30px;
 }
-.section8 .section8_boxformulaire .section8_formulaire input:focus {
+.section8 .section8_boxformulaire .section8_formulaire .section8_nomprenom .section8_prenom input:focus {
+  background-color: #92c8c4;
+}
+.section8 .section8_boxformulaire .section8_formulaire .section8_email {
+  width: 100%;
+  margin-bottom: 2%;
+}
+.section8 .section8_boxformulaire .section8_formulaire .section8_email input {
+  width: 100%;
+  height: 30px;
+}
+.section8 .section8_boxformulaire .section8_formulaire .section8_email input:focus {
   background-color: #92c8c4;
 }
 .section8 .section8_boxformulaire .section8_formulaire textarea {
-  padding-bottom: 4%;
+  width: 100%;
+  height: 50%;
 }
 .section8 .section8_boxformulaire .section8_formulaire textarea:focus {
   background-color: #92c8c4;
 }
-.section8 .section8_boxformulaire .section8_formulaire #email {
-  margin-bottom: 2%;
-}
-.section8 .section8_boxformulaire .section8_formulaire #message {
-  height: 50%;
-  margin-bottom: 2%;
-}
-.section8 .section8_boxformulaire .section8_formulaire button {
+.section8 .section8_boxformulaire button {
   width: 30%;
   padding: 2% 1%;
 }
+.section8 .section8_boxformulaire .input-control.success input {
+  border-color: #09c372;
+}
+.section8 .section8_boxformulaire .input-control.error input {
+  border-color: #ff3860;
+}
+.section8 .section8_boxformulaire .input-control .errorMessage {
+  color: #df002d;
+  font-size: 1.5rem;
+}
+
 /******* Bas de page ***********/
 .section9 {
   width: 100%;
