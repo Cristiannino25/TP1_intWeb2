@@ -24,6 +24,7 @@
   .section9_nousjoindre {
     width: 100%;
     display: flex;
+    align-items: center;
 
     .section9_faitpar {
       width: 100%;
@@ -36,13 +37,11 @@
       padding-left: 15%;
       .section9_icon {
         width: 8%;
-        margin-top: 3%;
       }
     }
     .section9_telemail {
       width: 100%;
       display: flex;
-
       justify-content: flex-end;
       align-items: center;
       .section9_tele {
@@ -59,11 +58,13 @@
       .section9_email {
         @extend %margininfo;
         .section9_iconemail {
+          margin-right: 2%;
           width: 13%;
-          margin-right: 5%;
         }
-        .section9_email {
+        .section9_emaillien {
           font-size: $fontParagraphe;
+          color: black;
+          margin-right: 5%;
         }
       }
     }

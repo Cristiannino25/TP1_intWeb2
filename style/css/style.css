@@ -13,9 +13,10 @@
 }
 
 .section9 .section9_nousjoindre .section9_telemail .section9_email, .section9 .section9_nousjoindre .section9_telemail .section9_tele {
-  width: 40%;
+  width: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: black;
 }
 
@@ -24,6 +25,7 @@
   color: rgba(92, 125, 130, 0.568627451);
 }
 
+/************responsive*/
 * {
   box-sizing: border-box;
 }
@@ -423,6 +425,7 @@ html {
 .section9 .section9_nousjoindre {
   width: 100%;
   display: flex;
+  align-items: center;
 }
 .section9 .section9_nousjoindre .section9_faitpar {
   width: 100%;
@@ -436,7 +439,6 @@ html {
 }
 .section9 .section9_nousjoindre .section9_reseauxsociaux .section9_icon {
   width: 8%;
-  margin-top: 3%;
 }
 .section9 .section9_nousjoindre .section9_telemail {
   width: 100%;
@@ -453,11 +455,13 @@ html {
   color: black;
 }
 .section9 .section9_nousjoindre .section9_telemail .section9_email .section9_iconemail {
+  margin-right: 2%;
   width: 13%;
-  margin-right: 5%;
 }
-.section9 .section9_nousjoindre .section9_telemail .section9_email .section9_email {
+.section9 .section9_nousjoindre .section9_telemail .section9_email .section9_emaillien {
   font-size: 1.5rem;
+  color: black;
+  margin-right: 5%;
 }
 
 /*******************RESPONSIVE****************************/
@@ -495,12 +499,56 @@ html {
     font-size: 2rem;
   }
   /***section5 grid ***/
-  /****section 6 stati**/
+  .section5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section5 .section5_img1 {
+    grid-area: 1/1/2/3;
+  }
+  .section5 .section5_img2 {
+    grid-area: 2/1/3/2;
+    align-self: start;
+  }
+  .section5 .section5_img3 {
+    grid-area: 3/2/4/3;
+    align-self: start;
+  }
+  .section5 .section5_img4 {
+    grid-area: 4/1/5/3;
+    align-self: start;
+  }
+  .section5 .section5_img5 {
+    grid-area: 3/1/4/2;
+  }
+  .section5 .section5_img6 {
+    grid-area: 2/2/3/3;
+    align-self: start;
+  }
+  /****section 6 statistique**/
   .section6_graphique {
     align-items: center;
   }
   .section6_graphique .section6_img {
     width: 60%;
     height: 65%;
+  }
+  /*** section 7 personnages***/
+  #section7_nomPerso {
+    font-size: 2rem;
+  }
+  /****section 8 formulaire***/
+  #section8_formulaire {
+    width: 50%;
+    margin-top: -66%;
+  }
+  #section8_formulaire .section8_h3 {
+    width: 70%;
+  }
+  /***bas de page***/
+  .section9_img {
+    width: 10%;
+  }
+  .section9_tele {
+    width: 50%;
   }
 }
