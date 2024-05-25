@@ -1,5 +1,4 @@
-@use "sass/variables" as *;
-@use "sass/fonts" as *;
+/*************** STATISTIQUES*****************/
 .section6 {
   width: 100%;
   display: flex;
@@ -9,30 +8,34 @@
     width: 90%;
     display: flex;
     justify-content: center;
-
-    .section6_img {
-      width: 50%;
-    }
   }
   .section6_containeurDescription {
     width: 90%;
 
     .section6_titre {
       font-size: $fontSousTitre;
+      color: $couleurBlanc;
+      text-align: center;
     }
     .section6_para {
       font-size: $fontParagraphe;
+      text-align: center;
+      color: $couleurBlanc;
     }
     .section6_statistiques {
       width: 100%;
       display: flex;
       font-size: $fontSousTitre;
+      color: $couleurBlanc;
       justify-content: space-around;
     }
   }
   .section6_btn {
     font-size: $fontNav;
     padding: 1% 2%;
-    border-radius: 2%;
+    @extend %btnmarge;
+    &:hover {
+      @extend %hoverbtn;
+    }
   }
 }

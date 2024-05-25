@@ -1,7 +1,3 @@
-/*SECTION 4 DESCRIPTION DES DIFFÉRENTS JEUX  */
-@use "sass/variables" as *;
-@use "sass/fonts" as *;
-
 .section4 {
   width: 100%;
   margin-bottom: 5%;
@@ -37,6 +33,7 @@
     }
     .section4_description {
       font-size: $fontParagraphe;
+      text-align: center;
     }
   }
 }

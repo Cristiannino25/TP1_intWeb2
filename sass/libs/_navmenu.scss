@@ -1,5 +1,3 @@
-@use "sass/variables" as *;
-@use "sass/fonts" as *;
 .navmenu {
   width: 95%;
   margin-left: 5%;
@@ -25,12 +23,22 @@
       font-family: DM_sans;
       text-decoration: none;
       font-size: $fontNav;
+      color: #825c5c;
     }
     .navmenu_btn:hover {
       text-decoration: underline;
+      color: $coulerVert;
     }
   }
 }
 .navmenu_burger {
   display: none;
+}
+/********* SECTION 1  IMAGE EN 'CARROUSEL '*********/
+.section1 {
+  width: 100%;
+  .section1_img {
+    width: 95%;
+    padding: 2% 0 2% 5%;
+  }
 }

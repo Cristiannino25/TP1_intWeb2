@@ -1,0 +1,51 @@
+/*******************RESPONSIVE****************************/
+
+@media screen and (max-width: 960px) {
+  .section6_img {
+    width: 80%;
+  }
+
+  #section8_formulaire {
+    margin-top: -50%;
+  }
+  .section6_statistiques {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+  .section9_tele {
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /**navmenu**/
+  .navmenu_liste {
+    display: none;
+  }
+  .navmenu_burger {
+    display: block;
+    margin-right: 5%;
+  }
+  /**** section 4**/
+  #section4_titre {
+    font-size: 4rem;
+  }
+  #section4_inf {
+    font-size: 2rem;
+  }
+  #section4_nom {
+    font-size: 2rem;
+  }
+  /***section5 grid ***/
+
+  /****section 6 stati**/
+  .section6_graphique {
+    align-items: center;
+    .section6_img {
+      width: 60%;
+      height: 65%;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+}

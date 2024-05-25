@@ -1,12 +1,12 @@
-@use "sass/variables" as *;
-@use "sass/fonts" as *;
 //general
+
 * {
   box-sizing: border-box;
 }
 // pour qu'il soit adaptative
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 .separation {
   border-top: $hrseparation;

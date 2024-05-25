@@ -1,4 +1,4 @@
-.section8 .section8_boxformulaire button, .section6 .section6_btn, .section3 .section3_signature .section3_btn, .section2 .section2_btn {
+.section8 .section8_boxformulaire button, .section6 .section6_btn {
   border-radius: 10px;
   border: solid 0px;
   background-color: #825c5c;
@@ -19,7 +19,7 @@
   color: black;
 }
 
-.section8 .section8_boxformulaire button:hover, .section6 .section6_btn:hover, .section3 .section3_signature .section3_btn:hover, .section2 .section2_btn:hover {
+.section8 .section8_boxformulaire button:hover, .section6 .section6_btn:hover {
   background-color: #ffffff;
   color: rgba(92, 125, 130, 0.568627451);
 }
@@ -30,13 +30,13 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .separation {
   border-top: 5px solid #5c7d82;
 }
 
-/********** MENU ****************************/
 .navmenu {
   width: 95%;
   margin-left: 5%;
@@ -85,7 +85,16 @@ html {
   padding: 2% 0 2% 5%;
 }
 
-/*********************** SECTION 2 INPUT BTN */
+/* SECTION 1  IMAGE EN 'CARROUSEL '*/
+.section1 {
+  width: 100%;
+}
+.section1 .section1_img {
+  width: 95%;
+  padding: 2% 0 2% 5%;
+}
+
+/* SECTION 2 INPUT BTN */
 .section2 {
   width: 100%;
   text-align: center;
@@ -102,12 +111,10 @@ html {
 }
 .section2 .section2_btn {
   height: 3rem;
-}
-.section2 .section2_btn:hover {
-  border: 1px solid #825c5c;
+  border-radius: 10px;
 }
 
-/************************ SECTION 3 SIGNATURE  */
+/* SECTION 3 SIGNATURE  */
 .section3 {
   width: 101.3%;
   height: 7rem;
@@ -132,7 +139,7 @@ html {
   font-size: 1.5rem;
   padding: 0 5%;
 }
-/************************LES JEUX*************************/
+
 .section4 {
   width: 100%;
   margin-bottom: 5%;
@@ -172,7 +179,6 @@ html {
   text-align: center;
 }
 
-/************************LA GRID *****************/
 .section5 {
   margin: 5%;
   display: grid;
@@ -300,7 +306,6 @@ html {
   border-left: 3px solid rgba(92, 125, 130, 0.568627451);
 }
 
-/************** formulaire ****************/
 .section8 {
   width: 100%;
 }
@@ -339,6 +344,7 @@ html {
 }
 .section8 .section8_boxformulaire .section8_formulaire .section8_nomprenom .section8_nom {
   width: 100%;
+  margin-right: 2%;
 }
 .section8 .section8_boxformulaire .section8_formulaire .section8_nomprenom .section8_nom input {
   width: 100%;
@@ -378,6 +384,7 @@ html {
 .section8 .section8_boxformulaire button {
   width: 30%;
   padding: 2% 1%;
+  margin-top: 5%;
 }
 .section8 .section8_boxformulaire .input-control.success input {
   border-color: #09c372;
@@ -390,7 +397,6 @@ html {
   font-size: 1.5rem;
 }
 
-/******* Bas de page ***********/
 .section9 {
   width: 100%;
   margin-top: 3%;
@@ -461,5 +467,40 @@ html {
   }
   #section8_formulaire {
     margin-top: -50%;
+  }
+  .section6_statistiques h2 {
+    font-size: 3rem;
+  }
+  .section9_tele {
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /**navmenu**/
+  .navmenu_liste {
+    display: none;
+  }
+  .navmenu_burger {
+    display: block;
+    margin-right: 5%;
+  }
+  /**** section 4**/
+  #section4_titre {
+    font-size: 4rem;
+  }
+  #section4_inf {
+    font-size: 2rem;
+  }
+  #section4_nom {
+    font-size: 2rem;
+  }
+  /***section5 grid ***/
+  /****section 6 stati**/
+  .section6_graphique {
+    align-items: center;
+  }
+  .section6_graphique .section6_img {
+    width: 60%;
+    height: 65%;
   }
 }
