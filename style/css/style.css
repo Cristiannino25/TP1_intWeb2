@@ -552,3 +552,31 @@ html {
     width: 50%;
   }
 }
+@media screen and (max-width: 500px) {
+  /**section2 carousel**/
+  #section2_paragraphe {
+    padding: 1%;
+    text-align: justify;
+  }
+  /**** section 4**/
+  #section4_titre {
+    font-size: 3rem;
+  }
+  #section4_inf {
+    font-size: 1.5rem;
+  }
+  .section4_jeux {
+    flex-direction: column;
+  }
+  .section4_jeux #section4_nom {
+    font-size: 1.5rem;
+  }
+  .section4_jeux #section4_description {
+    font-size: 1.3rem;
+  }
+  /***section 6 statistique***/
+  .section6_img {
+    width: 80%;
+    height: 50%;
+  }
+}
