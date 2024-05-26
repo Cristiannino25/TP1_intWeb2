@@ -25,7 +25,12 @@
   color: black;
 }
 
-/************responsive*/
+.section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -78,15 +83,6 @@ html {
   display: none;
 }
 
-/********* SECTION 1  IMAGE EN 'CARROUSEL '*********/
-.section1 {
-  width: 100%;
-}
-.section1 .section1_img {
-  width: 95%;
-  padding: 2% 0 2% 5%;
-}
-
 /* SECTION 1  IMAGE EN 'CARROUSEL '*/
 .section1 {
   width: 100%;
@@ -125,9 +121,6 @@ html {
   height: 7rem;
   background-color: #ababbb;
   margin: 2% 0 2% -1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .section3 .section3_signature {
   display: flex;
@@ -150,14 +143,10 @@ html {
 }
 .section4 .section4_titre {
   font-size: 6rem;
-  font-family: DM_sans;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .section4 .section4_info {
   font-size: 3rem;
-  display: flex;
-  justify-content: center;
   text-align: center;
   margin-bottom: 5%;
 }
@@ -228,8 +217,7 @@ html {
 }
 .section6 .section6_graphique {
   width: 90%;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .section6 .section6_graphique .section6_img {
   width: 60%;
@@ -409,8 +397,7 @@ html {
 }
 .section9 .section9_logo {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .section9 .section9_logo .section9_img {
   padding: 1%;

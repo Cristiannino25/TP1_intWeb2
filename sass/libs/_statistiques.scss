@@ -6,8 +6,7 @@
   padding: 5%;
   .section6_graphique {
     width: 90%;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     .section6_img {
       width: 60%;
       height: auto;
@@ -37,6 +36,7 @@
   .section6_btn {
     font-size: $fontNav;
     padding: 1% 2%;
+
     @extend %btnmarge;
     &:hover {
       @extend %hoverbtn;

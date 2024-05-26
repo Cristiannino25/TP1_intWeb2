@@ -37,9 +37,7 @@
   height: 7rem;
   background-color: $couleurGris;
   margin: 2% 0 2% -1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %displaycenter;
 
   .section3_signature {
     display: flex;
