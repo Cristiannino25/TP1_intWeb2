@@ -505,7 +505,13 @@ html {
   #section4_inf {
     font-size: 2rem;
   }
-  #section4_nom {
+  #section4--nom1 {
+    font-size: 2rem;
+  }
+  #section4--nom2 {
+    font-size: 2rem;
+  }
+  #section4--nom3 {
     font-size: 2rem;
   }
   /***section5 grid ***/
@@ -543,7 +549,13 @@ html {
     height: 65%;
   }
   /*** section 7 personnages***/
-  #section7_nomPerso {
+  #section7--nomPerso1 {
+    font-size: 2rem;
+  }
+  #section7--nomPerso2 {
+    font-size: 2rem;
+  }
+  #section7--nomPerso3 {
     font-size: 2rem;
   }
   /****section 8 formulaire***/
@@ -578,10 +590,22 @@ html {
   .section4_jeux {
     flex-direction: column;
   }
-  .section4_jeux #section4_nom {
+  .section4_jeux #section4--nom1 {
     font-size: 1.5rem;
   }
-  .section4_jeux #section4_description {
+  .section4_jeux #section4--nom2 {
+    font-size: 1.5rem;
+  }
+  .section4_jeux #section4--nom3 {
+    font-size: 1.5rem;
+  }
+  .section4_jeux #section4--description1 {
+    font-size: 1.3rem;
+  }
+  .section4_jeux #section4--description2 {
+    font-size: 1.3rem;
+  }
+  .section4_jeux #section4--description3 {
     font-size: 1.3rem;
   }
   /***section 6 statistique***/
