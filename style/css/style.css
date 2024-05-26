@@ -1,4 +1,4 @@
-.section8 .section8_boxformulaire button, .section6 .section6_btn {
+.section8 .section8_boxformulaire button, .section6 .section6_btn, .section3 .section3_signature .section3_btn, .section2 .section2_btn {
   border-radius: 10px;
   border: solid 0px;
   background-color: #825c5c;
@@ -20,9 +20,9 @@
   color: black;
 }
 
-.section8 .section8_boxformulaire button:hover, .section6 .section6_btn:hover {
+.section8 .section8_boxformulaire button:hover, .section6 .section6_btn:hover, .section3 .section3_signature .section3_btn:hover, .section2 .section2_btn:hover {
   background-color: #ffffff;
-  color: rgba(92, 125, 130, 0.568627451);
+  color: black;
 }
 
 /************responsive*/
@@ -115,6 +115,9 @@ html {
   height: 3rem;
   border-radius: 10px;
 }
+.section2 .section2_btn:hover {
+  border: 1px solid #825c5c;
+}
 
 /* SECTION 3 SIGNATURE  */
 .section3 {
@@ -141,7 +144,6 @@ html {
   font-size: 1.5rem;
   padding: 0 5%;
 }
-
 .section4 {
   width: 100%;
   margin-bottom: 5%;
@@ -229,6 +231,10 @@ html {
   display: flex;
   justify-content: center;
 }
+.section6 .section6_graphique .section6_img {
+  width: 60%;
+  height: auto;
+}
 .section6 .section6_containeurDescription {
   width: 90%;
 }
@@ -263,19 +269,17 @@ html {
 }
 .section7 .section7_titre_soust {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .section7 .section7_titre_soust .section7_titre {
   font-size: 3rem;
+  text-align: center;
 }
 .section7 .section7_titre_soust .section7_sous_titre {
-  width: 50%;
+  width: 80%;
   height: auto;
   font-size: 1.5rem;
+  padding-left: 20%;
   text-align: center;
-  padding-left: 2%;
 }
 .section7 .section7_cards {
   width: 100%;
@@ -430,12 +434,11 @@ html {
 .section9 .section9_nousjoindre .section9_faitpar {
   width: 100%;
   font-size: 1.5rem;
-  font-family: "Times New Roman";
   margin-left: 1%;
 }
 .section9 .section9_nousjoindre .section9_reseauxsociaux {
   width: 100%;
-  padding-left: 15%;
+  text-align: center;
 }
 .section9 .section9_nousjoindre .section9_reseauxsociaux .section9_icon {
   width: 8%;
@@ -465,9 +468,16 @@ html {
 }
 
 /*******************RESPONSIVE****************************/
+@media screen and (max-width: 1200px) {
+  #section8_formulaire {
+    width: 50%;
+    margin-top: -45%;
+  }
+}
 @media screen and (max-width: 960px) {
-  .section6_img {
+  #section6_img {
     width: 80%;
+    height: auto;
   }
   #section8_formulaire {
     margin-top: -50%;
@@ -575,8 +585,41 @@ html {
     font-size: 1.3rem;
   }
   /***section 6 statistique***/
-  .section6_img {
-    width: 80%;
-    height: 50%;
+  #section6 {
+    flex-direction: column;
+    align-items: center;
+  }
+  #section6 .section6_para {
+    text-align: justify;
+  }
+  #section6 #section6_img {
+    width: 100%;
+    height: auto;
+  }
+  #section6 .section6_btn {
+    margin-left: 40%;
+  }
+  /**section7 personnages**/
+  .section7_cards {
+    flex-direction: column;
+  }
+  /**section9 formulaire**/
+  iframe {
+    height: 400px;
+  }
+  #section8_formulaire {
+    width: 70%;
+    margin-top: -80%;
+  }
+  /**bas de pied**/
+  .section9_nousjoindre {
+    flex-direction: column;
+  }
+  .section9_nousjoindre .section9_faitpar {
+    text-align: center;
+  }
+  .section9_nousjoindre .section9_reseauxsociaux {
+    text-align: center;
+    padding-left: 1%;
   }
 }

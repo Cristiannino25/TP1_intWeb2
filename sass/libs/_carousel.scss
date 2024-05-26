@@ -24,6 +24,11 @@
   .section2_btn {
     height: 3rem;
     border-radius: 10px;
+    @extend %btnmarge;
+    &:hover {
+      @extend %hoverbtn;
+      border: 1px solid #825c5c;
+    }
   }
 }
 /* SECTION 3 SIGNATURE  */
@@ -51,6 +56,10 @@
       border-radius: 10px;
       font-size: 1.5rem;
       padding: 0 5%;
+      @extend %btnmarge;
+      &:hover {
+        @extend %hoverbtn;
+      }
     }
   }
 }

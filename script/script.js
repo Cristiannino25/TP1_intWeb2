@@ -24,7 +24,7 @@ const validateForm = () => {
   }
 
   if (prenom == "") {
-    setError(prenomInput, "le nom de l'usager ne peut pas être vide.");
+    setError(prenomInput, "le prenom de l'usager ne peut pas être vide.");
     noError = false;
   } else if (prenom.length > 20) {
     setError(

@@ -1,8 +1,15 @@
 /*******************RESPONSIVE****************************/
+@media screen and (max-width: 1200px) {
+  #section8_formulaire {
+    width: 50%;
+    margin-top: -45%;
+  }
+}
 
 @media screen and (max-width: 960px) {
-  .section6_img {
+  #section6_img {
     width: 80%;
+    height: auto;
   }
 
   #section8_formulaire {
@@ -118,8 +125,42 @@
     }
   }
   /***section 6 statistique***/
-  .section6_img {
-    width: 80%;
-    height: 50%;
+  #section6 {
+    flex-direction: column;
+    align-items: center;
+
+    .section6_para {
+      text-align: justify;
+    }
+    #section6_img {
+      width: 100%;
+      height: auto;
+    }
+    .section6_btn {
+      margin-left: 40%;
+    }
+  }
+  /**section7 personnages**/
+  .section7_cards {
+    flex-direction: column;
+  }
+  /**section9 formulaire**/
+  iframe {
+    height: 400px;
+  }
+  #section8_formulaire {
+    width: 70%;
+    margin-top: -80%;
+  }
+  /**bas de pied**/
+  .section9_nousjoindre {
+    flex-direction: column;
+    .section9_faitpar {
+      text-align: center;
+    }
+    .section9_reseauxsociaux {
+      text-align: center;
+      padding-left: 1%;
+    }
   }
 }
