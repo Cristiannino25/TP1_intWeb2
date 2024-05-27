@@ -1,12 +1,13 @@
 .navmenu {
-  width: 95%;
-  margin-left: 5%;
+  width: 101.5%;
+  margin-left: -1%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: $couleurGris;
   .navmenu_h1 {
     display: flex;
-    margin: 1%;
+    margin: 2%;
     .navmenu_logo {
       width: 5rem;
     }
@@ -23,11 +24,12 @@
       font-family: DM_sans;
       text-decoration: none;
       font-size: $fontNav;
-      color: #825c5c;
+      color: $couleurBlanc;
     }
     .navmenu_btn:hover {
       text-decoration: underline;
-      color: $coulerVert;
+      color: black;
+      font-weight: 600;
     }
   }
 }
