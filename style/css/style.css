@@ -396,15 +396,16 @@ html {
 
 .section9 {
   width: 100%;
-  margin-top: 3%;
+  background-color: #ababbb;
 }
 .section9 .section9_logo {
   width: 100%;
   text-align: center;
 }
 .section9 .section9_logo .section9_img {
+  margin-top: 1%;
   padding: 1%;
-  border: 3px solid rgba(92, 125, 130, 0.568627451);
+  border: 3px solid #ffffff;
 }
 .section9 .section9_information {
   width: 100%;
@@ -414,6 +415,7 @@ html {
 .section9 .section9_information .section9_inf {
   margin: 2%;
   font-size: 1.5rem;
+  font-weight: 600;
   text-decoration: underline;
 }
 .section9 .section9_nousjoindre {

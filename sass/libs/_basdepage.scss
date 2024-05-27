@@ -1,13 +1,15 @@
 .section9 {
   width: 100%;
-  margin-top: 3%;
+  //margin-top: 3%;
+  background-color: $couleurGris;
   .section9_logo {
     width: 100%;
     text-align: center;
 
     .section9_img {
+      margin-top: 1%;
       padding: 1%;
-      border: 3px solid $coulerVert;
+      border: 3px solid $couleurBlanc;
     }
   }
   .section9_information {
@@ -17,6 +19,7 @@
     .section9_inf {
       margin: 2%;
       font-size: $fontParagraphe;
+      font-weight: 600;
       text-decoration: underline;
     }
   }
